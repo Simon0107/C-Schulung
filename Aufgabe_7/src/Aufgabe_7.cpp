@@ -1,16 +1,27 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
+double kapitalBerechnen(double wert);
+
+int dauer=0;
+double zinssatz = 1.0;
+double kapital_1;
+double kapital_2;
+double wert = 1000;
 
 int main() {
-	int dauer=0;
-	double zinssatz = 1.0;
-	double kapital;
-	double wert = 1000;
 
 	cout << "Dauer der Anlage eingeben (in Jahren)" << endl;
 	cin >> dauer;
-	kapital = wert * pow(1+zinssatz/100, dauer);
-	cout << "Endwert: " << kapital;
+	kapital_1 = wert * pow(1+zinssatz/100, dauer);
+	kapital_2 = kapitalBerechnen(wert);
+	cout << "Endwert (ohne Funktion):" << kapital_1 << endl;
+	cout << "Endwert (mit Funktion) :" << kapital_2;
 	return 0;
+}
+
+double kapitalBerechnen(double wert) {
+
+	double kap = wert * pow(1+zinssatz/100, dauer);
+	return kap;
 }
