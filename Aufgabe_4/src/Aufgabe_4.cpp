@@ -9,28 +9,34 @@ int main() {
 	srand(time(0));
 
 	int eingegebenZahl=0;
+	char eingabe = ' ';
 
-	cout << "Zahl eingeben:" <<endl;
+	while(eingabe != 'q') {
 
-	cin >> eingegebenZahl;
+		cout << "Zahl eingeben:" <<endl;
 
-	cout << endl;
+		cin >> eingegebenZahl;
 
-	int zufallszahl = (rand() % 6 + 1);
+		cout << endl;
 
-	cout << "Generierte Zufallszahl: "<< zufallszahl << endl;
+		int zufallszahl = (rand() % 6 + 1);
 
-	if(eingegebenZahl==zufallszahl) {
+		cout << "Generierte Zufallszahl: "<< zufallszahl << endl;
 
-		cout << "Gewonnen" <<endl;
+		if(eingegebenZahl==zufallszahl) {
 
-	} else {
+			cout << "Gewonnen" <<endl;
 
-		cout << "Verloren" <<endl;
+		} else {
+
+			cout << "Verloren" <<endl;
+
+		}
+
+		cout << "Abbruch? (-> q)" << endl;
+		cin >> eingabe;
 
 	}
-
-
 
 	return 0;
 }

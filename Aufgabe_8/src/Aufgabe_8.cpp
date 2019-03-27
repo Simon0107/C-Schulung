@@ -33,7 +33,6 @@ void tauschen(int zahl1, int zahl2) {
 	tmp = zahl1;
 	zahl1 = zahl2;
 	zahl2 = tmp;
-	cout << "Nochmaliger Tausch innerhalb der Funktion" << endl;
-	cout << zahl1 << endl;
-	cout << zahl2 << endl;
+	cout << "Nochmaliger Tausch innerhalb der Funktion: "<< endl;
+	cout << zahl1<< ", " << zahl2 << endl;
 }
