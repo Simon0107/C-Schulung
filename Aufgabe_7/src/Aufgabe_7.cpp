@@ -5,6 +5,7 @@ double kapitalBerechnen(double wert);
 
 /*
  * Lösung auch ohne globale Variablen möglich -> mit mehr Übergabeparametern
+ * Rückgabewert auch nicht zwingend notwendig -> mit globaler Variable
  */
 
 int dauer=0;
