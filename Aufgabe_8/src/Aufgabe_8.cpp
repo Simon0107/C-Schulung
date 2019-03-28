@@ -1,38 +1,38 @@
 #include <iostream>
 using namespace std;
 
-int eingegebeneZahl_1=0;
-int eingegebeneZahl_2=0;
+int intEeingegebeneZahl_1=0;
+int intEingegebeneZahl_2=0;
 
-void tauschen(int zahl1, int zahl2);
+void tauschen(int intZahl1, int intZahl2);
 
 int main() {
 
 	cout << "Bitte Zahl eingeben" << endl;
-	cin >> eingegebeneZahl_1;
+	cin >> intEeingegebeneZahl_1;
 
 	cout << "Bitte Zahl eingeben" << endl;
-	cin >> eingegebeneZahl_2;
+	cin >> intEingegebeneZahl_2;
 
-	cout << eingegebeneZahl_1 << ", "<< eingegebeneZahl_2 <<endl;
+	cout << intEeingegebeneZahl_1 << ", "<< intEingegebeneZahl_2 <<endl;
 
 	int temp=0;
-	temp = eingegebeneZahl_1;
-	eingegebeneZahl_1 = eingegebeneZahl_2;
-	eingegebeneZahl_2 = temp;
+	temp = intEeingegebeneZahl_1;
+	intEeingegebeneZahl_1 = intEingegebeneZahl_2;
+	intEingegebeneZahl_2 = temp;
 
-	cout << eingegebeneZahl_1 << ", "<< eingegebeneZahl_2 <<endl;
+	cout << intEeingegebeneZahl_1 << ", "<< intEingegebeneZahl_2 <<endl;
 
-	tauschen(eingegebeneZahl_1, eingegebeneZahl_2);
+	tauschen(intEeingegebeneZahl_1, intEingegebeneZahl_2);
 
 	return 0;
 }
 
-void tauschen(int zahl1, int zahl2) {
+void tauschen(int intZahl1, int intZahl2) {
 	int tmp =0;
-	tmp = zahl1;
-	zahl1 = zahl2;
-	zahl2 = tmp;
+	tmp = intZahl1;
+	intZahl1 = intZahl2;
+	intZahl2 = tmp;
 	cout << "Nochmaliger Tausch innerhalb der Funktion: "<< endl;
-	cout << zahl1<< ", " << zahl2 << endl;
+	cout << intZahl1<< ", " << intZahl2 << endl;
 }

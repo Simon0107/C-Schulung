@@ -2,11 +2,11 @@
 using namespace std;
 
 int main() {
-	int eingegebeneZahl=0;
+	int intEingegebeneZahl=0;
 	cout << "Bitte Zahl eingeben" << endl;
-	cin >> eingegebeneZahl;
+	cin >> intEingegebeneZahl;
 
-	if(eingegebeneZahl%2==0) {
+	if(intEingegebeneZahl%2==0) {
 		cout << "Zahl gerade" << endl;
 	} else {
 		cout << "Zahl ungerade" << endl;

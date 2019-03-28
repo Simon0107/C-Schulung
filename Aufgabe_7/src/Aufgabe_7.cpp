@@ -8,29 +8,29 @@ double kapitalBerechnen(double wert);
  * Rückgabewert auch nicht zwingend notwendig -> mit globaler Variable
  */
 
-int dauer=0;
-double zinssatz = 1.0;
-double kapital_1;
-double kapital_2;
-double wert = 1000;
+int intDauer=0;
+double dblZinssatz = 1.0;
+double dblKapital_1;
+double dblKapital_2;
+double dblWert = 1000;
 
 int main() {
 
 	cout << "Dauer der Anlage eingeben (in Jahren)" << endl;
-	cin >> dauer;
+	cin >> intDauer;
 
-	kapital_1 = wert * pow(1+zinssatz/100, dauer);
-	kapital_2 = kapitalBerechnen(wert);
+	dblKapital_1 = dblWert * pow(1+dblZinssatz/100, intDauer);
+	dblKapital_2 = kapitalBerechnen(dblWert);
 
-	cout << "Endwert (ohne Funktion):" << kapital_1 << endl;
-	cout << "Endwert (mit Funktion) :" << kapital_2;
+	cout << "Endwert (ohne Funktion):" << dblKapital_1 << endl;
+	cout << "Endwert (mit Funktion) :" << dblKapital_2;
 
 	return 0;
 }
 
 double kapitalBerechnen(double wert) {
 
-	double kap = wert * pow(1+zinssatz/100, dauer);
+	double kap = wert * pow(1+dblZinssatz/100, intDauer);
 	return kap;
 
 }

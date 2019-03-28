@@ -1,18 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int zahl,zahl2,rest,dual[16];
+int intZahl,intZahl2,intRest,intDual[16];
 
 int main() {
 	cout<<"Zahl eingeben: ";
-	cin>>zahl;
+	cin>>intZahl;
 
 
 	for (int i = 15; i >= 0; i--) {
-		zahl2 = zahl / 2;
-		rest = zahl - (zahl2 * 2);
-		dual[i] = rest;
-		zahl = zahl2;
+		intZahl2 = intZahl / 2;
+		intRest = intZahl - (intZahl2 * 2);
+		intDual[i] = intRest;
+		intZahl = intZahl2;
 	}
 
 	cout << endl;
@@ -20,7 +20,7 @@ int main() {
 	 * Ausgabe in andere Richtung sonst wäre die Zahl falsch herum
 	 * */
 	for (int i = 0; i <= 15; i++){
-		cout << dual[i];
+		cout << intDual[i];
 	}
 	return 0;
 }

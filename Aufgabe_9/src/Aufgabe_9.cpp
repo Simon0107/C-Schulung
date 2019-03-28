@@ -1,37 +1,37 @@
 #include <iostream>
 using namespace std;
 
-void bubblesort(int *zahlen);
+void bubblesort(int *intZahlen);
 
 int main() {
 
-	int zahlen[10] = {4,2,8,1,3,7,5,9,6};
+	int intZahlen[10] = {4,2,8,1,3,7,5,9,6};
 
-	bubblesort(zahlen);
+	bubblesort(intZahlen);
 
 	return 0;
 }
-void bubblesort(int *zahlen) {
+void bubblesort(int *intZahlen) {
 
 	int tmp=0;
 
-	for(int i = 0; i < 10; i++) {
+	for(int intI = 0; intI < 10; intI++) {
 
-		for(int j = 0; j < i - 1; j++) {
+		for(int intJ = 0; intJ < intI - 1; intJ++) {
 
-			if(zahlen[j] > zahlen[i]) {
+			if(intZahlen[intJ] > intZahlen[intI]) {
 
-				tmp = zahlen[j];
-				zahlen[j] = zahlen[i];
-				zahlen[i] = tmp;
+				tmp = intZahlen[intJ];
+				intZahlen[intJ] = intZahlen[intI];
+				intZahlen[intI] = tmp;
 
 			}
 		}
 	}
 
-	for(int i = 0; i < 10; i++) {
+	for(int intI = 0; intI < 10; intI++) {
 
-		cout << zahlen[i]<<", ";
+		cout << intZahlen[intI]<<", ";
 
 	}
 }

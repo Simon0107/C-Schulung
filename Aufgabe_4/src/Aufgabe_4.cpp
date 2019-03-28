@@ -8,14 +8,14 @@ int main() {
 
 	srand(time(0));
 
-	int eingegebenZahl=0;
-	char eingabe = ' ';
+	int intEingegebenZahl=0;
+	char charEingabe = ' ';
 
-	while(eingabe != 'q') {
+	while(charEingabe != 'q') {
 
 		cout << "Zahl eingeben:" <<endl;
 
-		cin >> eingegebenZahl;
+		cin >> intEingegebenZahl;
 
 		cout << endl;
 
@@ -23,7 +23,7 @@ int main() {
 
 		cout << "Generierte Zufallszahl: "<< zufallszahl << endl;
 
-		if(eingegebenZahl==zufallszahl) {
+		if(intEingegebenZahl==zufallszahl) {
 
 			cout << "Gewonnen" <<endl;
 
@@ -34,7 +34,7 @@ int main() {
 		}
 
 		cout << "Abbruch? (-> q)" << endl;
-		cin >> eingabe;
+		cin >> charEingabe;
 
 	}
 
