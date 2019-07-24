@@ -7,7 +7,7 @@ int main() {
 
 		for(int intJ = 1; intJ <= 10; intJ++) {
 
-			cout << intI << " * " << intJ << " = " << intI * intJ << "\t";
+			cout << intI << " * " << intJ << " = " << intI * intJ << " \t";
 
 	  }
 		cout << endl;

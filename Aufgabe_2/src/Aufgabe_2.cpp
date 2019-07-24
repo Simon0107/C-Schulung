@@ -6,7 +6,7 @@ int intZahl,intRest;
 int main() {
 	cout<<"Zahl eingeben: "<<endl;
 	cin>>intZahl;
-	intRest=intZahl;
+	//intRest=intZahl;
 
 	while(intZahl!=0) {
 

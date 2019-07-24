@@ -5,6 +5,10 @@ int intEeingegebeneZahl_1=0;
 int intEingegebeneZahl_2=0;
 
 void tauschen(int intZahl1, int intZahl2);
+/*
+ * Aufgabe auch mit globalen Variablen lösbar
+ */
+
 
 int main() {
 

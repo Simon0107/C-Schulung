@@ -17,7 +17,7 @@ void bubblesort(int *intZahlen) {
 
 	for(int intI = 0; intI < 10; intI++) {
 
-		for(int intJ = 0; intJ < intI - 1; intJ++) {
+		for(int intJ = 0; intJ < intI; intJ++) {
 
 			if(intZahlen[intJ] > intZahlen[intI]) {
 

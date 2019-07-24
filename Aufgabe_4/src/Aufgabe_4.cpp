@@ -1,12 +1,10 @@
 #include <iostream>
-#include <time.h>
-#include <stdlib.h>
-#include <stdio.h>
+
 using namespace std;
 
 int main() {
 
-	srand(time(0));
+	cout << rand() << endl;
 
 	int intEingegebenZahl=0;
 	char charEingabe = ' ';

@@ -8,16 +8,13 @@ double kapitalBerechnen(double wert);
  * Rückgabewert auch nicht zwingend notwendig -> mit globaler Variable
  */
 
-int intDauer=0;
-double dblZinssatz = 1.0;
+int intDauer=5;
+double dblZinssatz = 1.2;
 double dblKapital_1;
 double dblKapital_2;
 double dblWert = 1000;
 
 int main() {
-
-	cout << "Dauer der Anlage eingeben (in Jahren)" << endl;
-	cin >> intDauer;
 
 	dblKapital_1 = dblWert * pow(1+dblZinssatz/100, intDauer);
 	dblKapital_2 = kapitalBerechnen(dblWert);
