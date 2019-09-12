@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 	int intZahl;
-	char charEingabe = ' ';
+	char charEingabe = 'd';
 
 	while(charEingabe != 'q') {
 	  cout << "Bitte eine Int-Zahl eingeben" << endl;
@@ -16,6 +16,8 @@ int main() {
 	  cout << "Nochmal? (Abbruch=q)" << endl;
 	  cin >> charEingabe;
 	}
+
+	cout << "Ende";
 
 	return 0;
 }

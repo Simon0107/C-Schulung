@@ -10,7 +10,10 @@ int main() {
 			cout << intI << " * " << intJ << " = " << intI * intJ << " \t";
 
 	  }
+
 		cout << endl;
+
 	}
+
 	return 0;
 }

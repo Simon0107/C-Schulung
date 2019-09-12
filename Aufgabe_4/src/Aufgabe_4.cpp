@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-	cout << rand() << endl;
+	//cout << rand() << endl;
 
 	int intEingegebenZahl=0;
 	char charEingabe = ' ';

@@ -13,7 +13,7 @@ int main() {
 
 	for(int intI = 0; intI < 100; intI++) {
 
-		cout << intArray[intI] << ", ";
+		cout << &intArray[intI] << ", ";
 
 	}
 
