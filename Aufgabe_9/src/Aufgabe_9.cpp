@@ -25,6 +25,8 @@ int main() {
 void bubblesort(int *intZahlen) {
 	int tmp=0;
 	int vergleiche=0;
+
+
 	int most_common = -1;
 	int max_occurance = 0;
 	int temp_occurance = 0;

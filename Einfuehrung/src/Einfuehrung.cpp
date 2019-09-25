@@ -20,7 +20,7 @@ int main() {
 		}
 
 		if(intArray[i] == zahl) {
-			cout << "die von ihnen eingegebene Zahl kommt im Array vor"<<endl;
+			cout << "die von ihnen eingegebene Zahl kommt im Array vor" << endl;
 		}
 
 	}
